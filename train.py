@@ -25,9 +25,9 @@ parser.add_argument('--load-model', default='', metavar='FILE',
 # Architecture arguments
 parser.add_argument('--vocab-size', type=int, default=10000, metavar='N',
                     help='keep N most frequent words in vocabulary')
-parser.add_argument('--dim_z', type=int, default=128, metavar='D',
+parser.add_argument('--dim_z', type=int, default=64, metavar='D',
                     help='dimension of latent variable z')
-parser.add_argument('--dim_emb', type=int, default=512, metavar='D',
+parser.add_argument('--dim_emb', type=int, default=256, metavar='D',
                     help='dimension of word embedding')
 parser.add_argument('--dim_h', type=int, default=1024, metavar='D',
                     help='dimension of hidden state per layer')
@@ -55,7 +55,7 @@ parser.add_argument('--lr', type=float, default=0.0005, metavar='LR',
                     help='learning rate')
 #parser.add_argument('--clip', type=float, default=0.25, metavar='NORM',
 #                    help='gradient clipping')
-parser.add_argument('--epochs', type=int, default=50, metavar='N',
+parser.add_argument('--epochs', type=int, default=10, metavar='N',
                     help='number of training epochs')
 parser.add_argument('--batch-size', type=int, default=256, metavar='N',
                     help='batch size')
